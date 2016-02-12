@@ -56,6 +56,7 @@ public class MyView extends View {
 
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
+                _path.reset();
                 _path.moveTo(touchx,touchy);
                 break;
             case MotionEvent.ACTION_MOVE:
