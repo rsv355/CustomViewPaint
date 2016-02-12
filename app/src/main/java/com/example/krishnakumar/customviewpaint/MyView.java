@@ -17,6 +17,10 @@ public class MyView extends View {
     private Paint _paint;
     private Path _path;
 
+    public void setPaintColor(int color){
+        _paint.setColor(color);
+    }
+
     public MyView(Context context) {
         super(context);
         init();
@@ -35,7 +39,6 @@ public class MyView extends View {
     private void init(){
         _paint = new Paint();
         _path = new Path();
-        _paint.setColor(Color.BLUE);
         _paint.setAntiAlias(true);
         _paint.setStyle(Paint.Style.STROKE);
     }
